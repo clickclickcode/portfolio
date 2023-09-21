@@ -9,7 +9,7 @@ import Work from './pages/Work.jsx'
 function App() {
 
   return (
-    <div className='w-screen lg:w-[41rem] mx-auto'>
+    <div className='w-screen lg:w-[45rem] mx-auto'>
       <Nav />
       <Routes>
         <Route path="/" element={<Home />} />
