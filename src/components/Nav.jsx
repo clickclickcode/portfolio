@@ -1,4 +1,5 @@
 import { NavLink } from 'react-router-dom';
+import HamburgerMenu from './HamburgerMenu';
 
 export default function Nav() {
     return (
@@ -11,6 +12,9 @@ export default function Nav() {
             </div>
             <div>
                 <p>switch</p>
+            </div>
+            <div>
+                <HamburgerMenu />
             </div>
         </nav>
     )

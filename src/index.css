@@ -7,3 +7,12 @@
         font-family: 'Poppins', sans-serif;
     }
 }
+
+@layer components {
+    .menu-button {
+        @apply px-4 py-2 rounded-md text-white font-semibold;
+    }
+    .menu-button-open {
+        @apply bg-gray-800;
+    }
+}
