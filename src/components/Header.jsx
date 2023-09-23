@@ -24,7 +24,7 @@ export default function Header() {
                 </div>
             </header>
             {isOpen && (
-                <div className='absolute flex flex-col items-center z-[10] basis-full backdrop-blur-sm h-screen w-screen'>
+                <div className='absolute flex flex-col items-center z-[10] basis-full backdrop-blur-md h-screen w-screen'>
                     <NavLinks />
                 </div>
             )}
