@@ -5,9 +5,11 @@ import { useState } from 'react'
 export default function Header() {
     
     const [isOpen, setIsOpen] = useState(false)
+    const body = document.querySelector('body')
 
     const toggleNavbar = () => {
         setIsOpen(!isOpen)
+        body.style.overflow = isOpen ? 'scroll' : 'hidden'
     }
     
     return (
@@ -23,7 +25,7 @@ export default function Header() {
                 </div>
             </header>
             {isOpen && (
-                <div className='absolute flex flex-col items-center z-[10] basis-full backdrop-blur-md h-screen w-screen gap-8 py-24 text-2xl'>
+                <div className='absolute flex flex-col items-center z-[10] basis-full backdrop-blur-md h-screen w-screen gap-8 py-24 text-2xl overscroll-contain overflow-scroll overflow-x-scroll'>
                     <NavLinks />
                 </div>
             )}
