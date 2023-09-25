@@ -5,6 +5,7 @@ import Home from './pages/Home.jsx'
 import AboutMe from './pages/AboutMe.jsx'
 import Contact from './pages/Contact.jsx'
 import Work from './pages/Work.jsx'
+import CardContainer from './components/CardContainer'
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
         <Route path="/work" element={<Work />} />
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
+      <CardContainer />
     </div>
   )
 }
