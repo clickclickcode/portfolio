@@ -1,6 +1,5 @@
 import HamburgerMenu from './HamburgerMenu.jsx'
 import NavLinks from './NavLinks.jsx'
-import Nav from './Nav.jsx'
 import { useState } from 'react'
 
 export default function Header() {
@@ -15,7 +14,7 @@ export default function Header() {
         <>
             <header className="bg-white sticky top-0 flex-wrap z-[20] mx-auto flex w-full items-center justify-center border-b border-gray-500">
                 <div className='hidden md:flex gap-4 justify-between py-4'>
-                    <Nav />
+                    <NavLinks />
                 </div>
                 <div className='md:hidden'>
                     <button onClick={toggleNavbar}>

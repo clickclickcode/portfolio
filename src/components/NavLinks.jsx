@@ -10,5 +10,3 @@ export default function NavLinks() {
         </>
     )
 }
-
-// div className='flex mx-7 my-3.5 gap-5'
