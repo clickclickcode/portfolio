@@ -6,6 +6,7 @@ import AboutMe from './pages/AboutMe.jsx'
 import Contact from './pages/Contact.jsx'
 import Work from './pages/Work.jsx'
 import CardContainer from './components/CardContainer'
+import Footer from './components/Footer'
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
       <CardContainer />
+      <Footer />
     </div>
   )
 }

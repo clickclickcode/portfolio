@@ -14,7 +14,7 @@ export default function Header() {
     
     return (
         <>
-            <header className="bg-white sticky top-0 flex-wrap z-[20] mx-auto flex w-full items-center justify-center border-b border-gray-500">
+            <header className="bg-white sticky top-0 flex-wrap z-[20] mx-auto flex w-full items-center justify-start border-b border-gray-500 px-5">
                 <div className='hidden md:flex gap-4 justify-between py-4'>
                     <NavLinks />
                 </div>
