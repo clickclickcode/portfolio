@@ -4,7 +4,7 @@ import IntroDescription from './IntroDescription'
 
 export default function Intro() {
     return (
-        <div className='flex flex-col gap-5 md:grid md:grid-cols-2 md:grid-rows-2 mx-20 mt-7'>
+        <div className='flex flex-col gap-5 md:grid md:grid-cols-2 md:grid-rows-2 mx-20 my-7'>
             <div className=''>
                 {/* Container storing name and title */}
                 <NameAndTitle />

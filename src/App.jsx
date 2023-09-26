@@ -1,11 +1,17 @@
+// CSS
 import './index.css'
+
+// React
 import { Route, Routes, Navigate } from 'react-router-dom'
-import Header from './components/Header.jsx'
+
+// Pages
 import Home from './pages/Home.jsx'
 import AboutMe from './pages/AboutMe.jsx'
 import Contact from './pages/Contact.jsx'
 import Work from './pages/Work.jsx'
-import CardContainer from './components/CardContainer'
+
+// Components
+import Header from './components/Header.jsx'
 import Footer from './components/Footer'
 
 function App() {
@@ -20,7 +26,6 @@ function App() {
         <Route path="/work" element={<Work />} />
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
-      <CardContainer />
       <Footer />
     </div>
   )

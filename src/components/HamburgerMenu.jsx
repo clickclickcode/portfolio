@@ -16,7 +16,7 @@ export default function HamburgerMenu() {
     }
 
     return (
-        <div className={menuOpen ? 'menu-button-open' : 'menu-button'}
+        <div className={menuOpen ? 'menu-button-open' : 'menu-button'}  id='menu-button'
         onClick={() => setOpenedState()}
         >
             <div className='menu-button-burger'>
