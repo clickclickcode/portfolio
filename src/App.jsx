@@ -11,14 +11,14 @@ import Contact from './pages/Contact.jsx'
 import Work from './pages/Work.jsx'
 
 // Components
-import Header from './components/Header.jsx'
+import HeaderV2 from './components/HeaderV2.jsx'
 import Footer from './components/Footer'
 
 function App() {
 
   return (
     <div className='w-screen md:w-[45rem] mx-auto'>
-      <Header />
+      <HeaderV2 />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about-me" element={<AboutMe />} />
