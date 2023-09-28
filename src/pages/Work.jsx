@@ -1,4 +1,7 @@
+import { useEffect, useState } from 'react';
 import CardContainer from '../components/CardContainer'
+import parse from 'html-react-parser'
+import ProjectCard from '../components/ProjectCard';
 
 
 export default function Work() {
@@ -38,14 +41,31 @@ export default function Work() {
             alt: '',
         },
     ];
+
+    const [posts, setPosts] = useState([]);
+
+    useEffect(() => {
+        async function getPosts() {
+            const response = await fetch('https://wp.learningthings.dk/wp-json/wp/v2/project?_embed');
+            const data = await response.json();
+            console.log(data);
+            setPosts(data);
+        }
+        getPosts();
+    }, []);
     
     return (
         <div className=''>
+            {/* These are the WP projects */}
             <div className='flex flex-col gap-5 my-5 mx-20'>
-                <h1 className='text-2xl'>Personal & School Projects</h1>
+                <h1 className='text-2xl'>Projects</h1>
                 <p className='text-md'>Here you can have a look around to see what projects I have been working on up until this moment. Hopefully, this will give you an idea of who I am as a developer. Happy browsing!</p>
+                {posts.map(post => (
+                    <ProjectCard key={post.id} post={post} />
+                ))}
             </div>
-            <div>
+            {/* This is the end of the WP projects */}
+            {/* <div>
                 <h2 className='text-2xl my-5 mx-20'>Tools</h2>
                 <div className='flex overflow-scroll'>
                     {tools.map(tool => (
@@ -81,7 +101,7 @@ export default function Work() {
                         </div>
                     ))}
                 </div>
-            </div>
+            </div> */}
             <CardContainer />
         </div>
     )
