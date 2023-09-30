@@ -57,51 +57,21 @@ export default function Work() {
     return (
         <div className=''>
             {/* These are the WP projects */}
-            <div className='flex flex-col gap-5 my-5 mx-20'>
+            <div className='my-5 mx-20'>
                 <h1 className='text-2xl'>Projects</h1>
-                <p className='text-md'>Here you can have a look around to see what projects I have been working on up until this moment. Hopefully, this will give you an idea of who I am as a developer. Happy browsing!</p>
+                <p className='text-md'>
+                    Here you can have a look around to see what projects I have been working on up until this moment. Hopefully, this will give you an idea of who I am as a developer. Happy browsing!
+                </p>
+            </div>
+            <div className='flex flex-row overflow-scroll mx-5'>
+                {posts.map(post => (
+                    <ProjectCard key={post.id} post={post} />
+                ))}
                 {posts.map(post => (
                     <ProjectCard key={post.id} post={post} />
                 ))}
             </div>
             {/* This is the end of the WP projects */}
-            {/* <div>
-                <h2 className='text-2xl my-5 mx-20'>Tools</h2>
-                <div className='flex overflow-scroll'>
-                    {tools.map(tool => (
-                        <div key={tool.id} className='flex flex-col gap-5 mx-20 my-10'>
-                            <img src={`../images/${tool.img}`} alt={tool.alt} />
-                        </div>
-                    ))}
-                </div>
-                <h2 className='text-2xl my-5 mx-20'>School Projects</h2>
-                <div className='flex overflow-scroll'>
-                    {projects.map(project => (
-                        <div key={project.id} className='flex flex-col gap-5 mx-20 my-10'>
-                            <h2>{project.title}</h2>
-                            <p>{project.description}</p>
-                        </div>
-                    ))}
-                </div>
-                <h2 className='text-2xl my-5 mx-20'>Personal Projects</h2>
-                <div className='flex overflow-scroll'>
-                    {projects.map(project => (
-                        <div key={project.id} className='flex flex-col gap-5 mx-20 my-10'>
-                            <h2>{project.title}</h2>
-                            <p>{project.description}</p>
-                        </div>
-                    ))}
-                </div>
-                <h2 className='text-2xl my-5 mx-20'>Tutorials</h2>
-                <div className='flex overflow-scroll'>
-                    {projects.map(project => (
-                        <div key={project.id} className='flex flex-col gap-5 mx-20 my-10'>
-                            <h2>{project.title}</h2>
-                            <p>{project.description}</p>
-                        </div>
-                    ))}
-                </div>
-            </div> */}
             <CardContainer />
         </div>
     )
