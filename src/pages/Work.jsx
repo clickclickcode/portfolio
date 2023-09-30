@@ -55,15 +55,15 @@ export default function Work() {
     }, []);
     
     return (
-        <div className=''>
+        <div className='flex flex-col gap-5 mx-5 my-10'>
             {/* These are the WP projects */}
-            <div className='my-5 mx-20'>
+            <div className=''>
                 <h1 className='text-2xl'>Projects</h1>
                 <p className='text-md'>
                     Here you can have a look around to see what projects I have been working on up until this moment. Hopefully, this will give you an idea of who I am as a developer. Happy browsing!
                 </p>
             </div>
-            <div className='flex flex-row overflow-scroll mx-5'>
+            <div className='flex items-center gap-5 overflow-scroll md:flex-row'>
                 {posts.map(post => (
                     <ProjectCard key={post.id} post={post} />
                 ))}

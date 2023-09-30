@@ -17,12 +17,12 @@ export default function ProjectCard({ post }) {
     }
 
     return (
-        <div className='min-w-[150px] flex flex-col mx-1'>
+        <div className='min-w-[200px] flex flex-col mx-1'>
             <img src={image} alt="" className="rounded-t-md md:grayscale md:hover:grayscale-0" />
             <div className="bg-gray-400 rounded-b-md px-2">
-                <h1 className='text-2xl'>{parse(post.title.rendered)}</h1>
-                <div className='text-md'>{parse(post.acf.description)}</div>
-                <div className='text-md'>{parse(post.acf.year)}</div>
+                <h1 className=''>{parse(post.title.rendered)}</h1>
+                <div className='truncate'>{parse(post.acf.description)}</div>
+                <div className=''>{parse(post.acf.year)}</div>
                 <div className='flex justify-center'>
                     <button onClick={letsGo} className='rounded-md bg-white text-center px-3 my-3'>Live Project</button>
                 </div>
