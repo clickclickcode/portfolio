@@ -17,9 +17,9 @@ export default function ProjectCard({ post }) {
     }
 
     return (
-        <div className='min-w-[200px] flex flex-col mx-1'>
-            <img src={image} alt="" className="rounded-t-md md:grayscale md:hover:grayscale-0" />
-            <div className="bg-gray-400 rounded-b-md px-2">
+        <div className='min-w-[200px] min-h-full flex flex-col mx-1'>
+            <img src={image} alt="" className="object-cover rounded-t-md md:grayscale md:hover:grayscale-0" />
+            <div className="flex flex-col flex-1 border rounded-b-md px-2">
                 <h1 className=''>{parse(post.title.rendered)}</h1>
                 <div className='truncate'>{parse(post.acf.description)}</div>
                 <div className=''>{parse(post.acf.year)}</div>
