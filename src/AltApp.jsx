@@ -6,6 +6,7 @@ import HeaderV2 from './components/HeaderV2.jsx'
 import Intro from './components/Intro'
 import AboutMe from './components/AboutMe'
 import Footer from './components/Footer'
+import Work from './components/Work'
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
 
       <Intro />
       <AboutMe />
+      <Work />
 
       <Footer />
     </div>

@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
-import CardContainer from '../components/CardContainer'
+import CardContainer from './CardContainer'
 import parse from 'html-react-parser'
-import ProjectCard from '../components/ProjectCard';
+import ProjectCard from './ProjectCard';
 
 
 export default function Work() {
@@ -55,10 +55,10 @@ export default function Work() {
     }, []);
     
     return (
-        <div className='flex flex-col gap-5 mx-5 my-10'>
+        <div className='flex flex-col gap-5 mx-20 my-5 pt-8' id='work'>
             {/* These are the WP projects */}
-            <div className=''>
-                <h1 className='text-2xl'>Projects</h1>
+            <div className='my-5'>
+                <h2 className='text-xl'>Projects</h2>
                 <p className='text-md'>
                     Here you can have a look around to see what projects I have been working on up until this moment. Hopefully, this will give you an idea of who I am as a developer. Happy browsing!
                 </p>
