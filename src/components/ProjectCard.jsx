@@ -17,14 +17,16 @@ export default function ProjectCard({ post }) {
     }
 
     return (
-        <div className='min-w-[200px] min-h-full flex flex-col mx-1'>
-            <img src={image} alt="" className="object-cover rounded-t-md md:grayscale md:hover:grayscale-0" />
-            <div className="flex flex-col flex-1 border rounded-b-md px-2">
-                <h1 className=''>{parse(post.title.rendered)}</h1>
-                <div className='truncate'>{parse(post.acf.description)}</div>
-                <div className=''>{parse(post.acf.year)}</div>
+        <div className='w-[200px] h-[300px] flex flex-col mx-1'>
+            <img src={image} alt="" className="h-[150px] w-[200px] object-cover rounded-t-md md:grayscale md:hover:grayscale-0" />
+            <div className="flex flex-col justify-between flex-1 h-[50%] border rounded-b-md px-2 py-1">
+                <div>
+                    <h1 className=''>{parse(post.title.rendered)}</h1>
+                    <div className='truncate'>{parse(post.acf.description)}</div>
+                    <div className=''>{parse(post.acf.year)}</div>
+                </div>
                 <div className='flex justify-center'>
-                    <button onClick={letsGo} className='rounded-md bg-white text-center px-3 my-3'>Live Project</button>
+                    <button onClick={letsGo} className='rounded-md text-white bg-teal-700 text-center px-3 my-3 hover:bg-teal-500 hover:text-black'>Live Project</button>
                 </div>
             </div>
         </div>

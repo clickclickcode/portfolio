@@ -63,10 +63,7 @@ export default function Work() {
                     Here you can have a look around to see what projects I have been working on up until this moment. Hopefully, this will give you an idea of who I am as a developer. Happy browsing!
                 </p>
             </div>
-            <div className='flex items-center gap-5 overflow-scroll md:flex-row'>
-                {posts.map(post => (
-                    <ProjectCard key={post.id} post={post} />
-                ))}
+            <div className='flex items-center gap-5 overflow-scroll py-4 md:flex-row'>
                 {posts.map(post => (
                     <ProjectCard key={post.id} post={post} />
                 ))}
