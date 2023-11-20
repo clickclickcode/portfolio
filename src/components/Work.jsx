@@ -56,20 +56,20 @@ export default function Work() {
     
     return (
         <div className='flex flex-col gap-5 mx-10 pt-14' id='work'>
-            {/* These are the WP projects */}
             <div className=''>
                 <h2 className='text-2xl mb-1'>Projects</h2>
                 <p className='text-base'>
                     Here you can have a look around to see what projects I have been working on up until this moment. Hopefully, this will give you an idea of who I am as a developer. Happy browsing!
                 </p>
             </div>
-            <div className='flex items-center gap-5 overflow-scroll py-4 md:flex-row'>
+            {/* These are the WP projects */}
+            <div className='flex items-center gap-6 overflow-scroll py-4 md:flex-row'>
                 {posts.map(post => (
                     <ProjectCard key={post.id} post={post} />
                 ))}
             </div>
             {/* This is the end of the WP projects */}
-            <CardContainer />
+            {/* <CardContainer /> */}
         </div>
     )
 }
