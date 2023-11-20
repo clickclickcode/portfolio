@@ -30,7 +30,7 @@ export default function HeaderV2() {
                 <NavLink className='md:hover:text-teal-700' to="/work">Work</NavLink>
             </div>
             {menuOpen && (
-                <div className={`${menuOpen ? 'z-[25] -mt-[50px]' : 'z-[10]'} absolute flex flex-col gap-5 py-8 items-center w-screen h-screen backdrop-blur-md text-2xl`}>
+                <div className={`${menuOpen ? 'z-[25] -mt-[50px]' : 'z-[10]'} absolute flex flex-col gap-12 pt-24 items-center w-screen h-screen backdrop-blur-md text-2xl`}>
                     <a href="#" onClick={() => setOpenedState()}>Home</a>
                     <a href="#about" onClick={() => setOpenedState()}>About Me</a>
                     <a href="#work" onClick={() => setOpenedState()}>Projects</a> 
