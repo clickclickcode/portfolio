@@ -23,11 +23,14 @@ export default function HeaderV2() {
                     <div className='menu-button-burger'></div>
                 </div>
             </div>
-            <div className='hidden md:flex gap-5 justify-start my-5'>
-                <NavLink className='md:hover:text-teal-700' to="/">Home</NavLink>
+            <div className='hidden md:flex md:gap-5 md:justify-start md:items-center md:bg-white md:h-[50px]'>
+                {/* <NavLink className='md:hover:text-teal-700' to="/">Home</NavLink>
                 <NavLink className='md:hover:text-teal-700' to="/about-me">About Me</NavLink>
                 <NavLink className='md:hover:text-teal-700' to="/contact">Contact</NavLink>
-                <NavLink className='md:hover:text-teal-700' to="/work">Work</NavLink>
+                <NavLink className='md:hover:text-teal-700' to="/work">Work</NavLink> */}
+                <a href="#">Home</a>
+                <a href="#about">About</a>
+                <a href="#work">Projects</a>
             </div>
             {menuOpen && (
                 <div className={`${menuOpen ? 'z-[25] -mt-[50px]' : 'z-[10]'} absolute flex flex-col gap-12 pt-24 items-center w-screen h-screen backdrop-blur-md text-2xl`}>

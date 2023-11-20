@@ -12,7 +12,7 @@ import Hr from './components/Hr'
 export default function App() {
 
   return (
-    <div className='flex flex-col gap-8 w-screen md:w-[45rem] mx-auto'>
+    <div className='flex flex-col gap-8 w-screen md:w-[55rem] mx-auto'>
       <HeaderV2 />
 
       <Intro />
