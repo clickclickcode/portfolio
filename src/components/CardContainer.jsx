@@ -6,7 +6,7 @@ export default function CardContainer() {
         <>
             <div className="flex flex-col gap-5 mx-5 my-10">
                 <h2>Projects</h2>
-                <div className="flex items-center gap-5 overflow-scroll md:flex-row">
+                <div className="flex items-center gap-5 py-4 overflow-scroll md:flex-row">
                     <Card
                         img={Me}
                         alt='artwork'

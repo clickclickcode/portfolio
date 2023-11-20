@@ -48,7 +48,7 @@ export default function Work() {
         async function getPosts() {
             const response = await fetch('https://wp.learningthings.dk/wp-json/wp/v2/project?_embed');
             const data = await response.json();
-            console.log(data);
+            // console.log(data);
             setPosts(data);
         }
         getPosts();
