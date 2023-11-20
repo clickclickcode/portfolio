@@ -19,7 +19,7 @@ export default function AboutMe() {
     ];
     
     return (
-        <div className="flex flex-col my-5 mx-20" id='about'>
+        <div className="flex flex-col pt-14 mx-10" id='about'>
             <h2 className="text-xl">Get to know me</h2>
             <p>Here are a few of the things that I enjoy spending time on.</p>
             <div className="flex flex-col self-center gap-5 my-5 md:flex-row">
