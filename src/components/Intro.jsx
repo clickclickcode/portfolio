@@ -6,7 +6,7 @@ export default function Intro() {
 
     // Render the different parts of the intro section
     return (
-        <div className='flex flex-col gap-10 mx-10 pt-2 md:grid md:grid-cols-2 md:grid-rows-2' id='home'>
+        <div className='flex flex-col gap-10 mx-10 pt-4 md:grid md:grid-cols-2 md:grid-rows-2' id='home'>
             <div className=''>
                 <NameAndTitle />
             </div>
