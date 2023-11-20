@@ -17,9 +17,9 @@ export default function HeaderV2() {
     }
     
     return (
-        <header className='sticky top-0 bg-white z-[20]'>
+        <header className='sticky top-0 bg-transparent z-[20]'>
             <div className='md:hidden'>
-                <div className={menuOpen ? 'menu-button-open' : 'menu-button'} id='menu-button' onClick={() => setOpenedState()}>
+                <div className={menuOpen ? 'menu-button-open z-[30]' : 'menu-button'} id='menu-button' onClick={() => setOpenedState()}>
                     <div className='menu-button-burger'></div>
                 </div>
             </div>
@@ -30,7 +30,7 @@ export default function HeaderV2() {
                 <NavLink className='md:hover:text-teal-700' to="/work">Work</NavLink>
             </div>
             {menuOpen && (
-                <div className='absolute flex flex-col gap-5 py-8 items-center w-screen h-screen z-[10] backdrop-blur-md text-2xl'>
+                <div className={`${menuOpen ? 'z-[25] -mt-[50px]' : 'z-[10]'} absolute flex flex-col gap-5 py-8 items-center w-screen h-screen backdrop-blur-md text-2xl`}>
                     <a href="#" onClick={() => setOpenedState()}>Home</a>
                     <a href="#about" onClick={() => setOpenedState()}>About Me</a>
                     <a href="#work" onClick={() => setOpenedState()}>Projects</a> 
