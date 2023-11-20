@@ -58,8 +58,8 @@ export default function Work() {
         <div className='flex flex-col gap-5 mx-10 pt-14' id='work'>
             {/* These are the WP projects */}
             <div className=''>
-                <h2 className='text-xl'>Projects</h2>
-                <p className='text-md'>
+                <h2 className='text-2xl mb-1'>Projects</h2>
+                <p className='text-base'>
                     Here you can have a look around to see what projects I have been working on up until this moment. Hopefully, this will give you an idea of who I am as a developer. Happy browsing!
                 </p>
             </div>

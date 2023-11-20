@@ -7,6 +7,7 @@ import Intro from './components/Intro'
 import AboutMe from './components/AboutMe'
 import Footer from './components/Footer'
 import Work from './components/Work'
+import Hr from './components/Hr'
 
 function App() {
 
@@ -15,7 +16,9 @@ function App() {
       <HeaderV2 />
 
       <Intro />
+      <Hr />
       <AboutMe />
+      <Hr />
       <Work />
 
       <Footer />
