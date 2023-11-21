@@ -67,4 +67,23 @@ const courses = [
     },
 ]
 
-export { courses }
+
+const hobbies = [
+    {
+        id: 1,
+        title: 'Coding',
+        description: 'Coding description',
+    },
+    {
+        id: 2,
+        title: 'Bouldering',
+        description: 'Bouldering description',
+    },
+    {
+        id: 3,
+        title: 'Reading',
+        description: 'Reading description',
+    },
+];
+
+export { courses, hobbies }

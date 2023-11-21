@@ -1,22 +1,8 @@
+import HobbyCard from "./HobbyCard";
+import { hobbies } from "../assets/storage";
+
 export default function AboutMe() {
     
-    const hobbies = [
-        {
-            id: 1,
-            title: 'Coding',
-            description: 'Coding description',
-        },
-        {
-            id: 2,
-            title: 'Bouldering',
-            description: 'Bouldering description',
-        },
-        {
-            id: 3,
-            title: 'Reading',
-            description: 'Reading description',
-        },
-    ];
     
     return (
         <div className="flex flex-col mx-12 pt-14" id='about'>
