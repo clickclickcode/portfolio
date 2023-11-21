@@ -20,7 +20,7 @@ export default function Work() {
 
     
     return (
-        <div className='flex flex-col gap-5 mx-10 pt-14' id='work'>
+        <div className='flex flex-col gap-5 mx-12 pt-14' id='work'>
             <div className=''>
                 <h2 className='text-2xl mb-1'>Projects</h2>
                 <p className='text-base'>
