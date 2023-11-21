@@ -28,7 +28,7 @@ export default function Work() {
                 </p>
             </div>
             {/* These are the WP projects */}
-            <div className='flex items-center gap-6 py-4 px-2 overflow-scroll md:justify-center'>
+            <div className='flex items-center gap-6 py-4 px-2 overflow-x-scroll md:justify-center'>
                 {posts.map(post => (
                     <ProjectCard key={post.id} post={post} />
                 ))}

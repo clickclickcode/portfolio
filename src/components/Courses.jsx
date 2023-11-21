@@ -13,7 +13,7 @@ export default function Work() {
                 </p>
             </div>
             {/* These are courses that I have done */}
-            <div className='flex items-center gap-6 py-4 px-2 overflow-scroll'>
+            <div className='flex items-center gap-6 py-4 px-2 overflow-x-scroll'>
                 {courses.map(course => (
                     <CourseCard key={course.id} course={course} />
                 ))}
