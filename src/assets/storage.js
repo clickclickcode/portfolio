@@ -1,3 +1,5 @@
+// an array of objects that contain information about the courses I have taken
+
 const courses = [
     {
         id: 1,
