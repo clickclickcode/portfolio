@@ -18,42 +18,6 @@ export default function Work() {
         getPosts();
     }, []);
 
-
-    // const projects = [
-    //     {
-    //         id: 1,
-    //         title: 'Project 1',
-    //         description: 'Project 1 description',
-    //     },
-    //     {
-    //         id: 2,
-    //         title: 'Project 2',
-    //         description: 'Project 2 description',
-    //     },
-    //     {
-    //         id: 3,
-    //         title: 'Project 3',
-    //         description: 'Project 3 description',
-    //     },
-    // ];
-    
-    // const tools = [
-    //     {
-    //         id: 1,
-    //         img: '',
-    //         alt: '',
-    //     },
-    //     {
-    //         id: 2,
-    //         img: '',
-    //         alt: '',
-    //     },
-    //     {
-    //         id: 3,
-    //         img: '',
-    //         alt: '',
-    //     },
-    // ];
     
     return (
         <div className='flex flex-col gap-5 mx-10 pt-14' id='work'>
