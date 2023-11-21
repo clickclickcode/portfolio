@@ -8,6 +8,7 @@ import AboutMe from './components/AboutMe'
 import Footer from './components/Footer'
 import Work from './components/Work'
 import Hr from './components/Hr'
+import Courses from './components/Courses'
 
 export default function App() {
 
@@ -20,6 +21,8 @@ export default function App() {
       <AboutMe />
       <Hr />
       <Work />
+      <Hr />
+      <Courses />
 
       <Footer />
     </div>
