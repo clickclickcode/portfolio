@@ -7,7 +7,7 @@ const courses = [
         description: 'A course consisting of 14 modules covering HTML, CSS, JavaScript, React, Back-End Development with Express, SQL, and TDD with Mocha.',
         img: '/images/codecademy-logo-v2.png',
         platform: 'Codecademy',
-        progress: '60%',
+        progress: 60,
     },
     {
         id: 2,
@@ -71,18 +71,21 @@ const courses = [
 const hobbies = [
     {
         id: 1,
+        img: '/images/coding.jpg',
         title: 'Coding',
-        description: 'Coding description',
+        description: 'There is always something new to learn and so many sources to learn from! It is a space which allows you to keep developing in every sense of the word.',
     },
     {
         id: 2,
+        img: '/images/bouldering.jpg',
         title: 'Bouldering',
-        description: 'Bouldering description',
+        description: 'It is like problem solving, but with your body! It takes strength, analytical skills, and creativity. Which is why I have been doing it on and off since 2017.',
     },
     {
         id: 3,
+        img: '/images/reading.jpg',
         title: 'Reading',
-        description: 'Reading description',
+        description: 'I mostly read non-fiction books. I read in an effort to grow as a person and because I am curious about the perspective of other people.',
     },
 ];
 

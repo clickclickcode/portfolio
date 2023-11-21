@@ -23,7 +23,7 @@ export default function Work() {
         <div className='flex flex-col gap-5 mx-12 pt-14' id='work'>
             <div className=''>
                 <h2 className='text-2xl mb-1'>Projects</h2>
-                <p className='text-base'>
+                <p className='text-[15px]'>
                     Here you can have a look around to see what projects I have been working on up until this moment. Hopefully, this will give you an idea of who I am as a developer. Happy browsing!
                 </p>
             </div>

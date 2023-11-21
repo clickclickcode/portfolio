@@ -8,7 +8,7 @@ export default function Work() {
         <div className='flex flex-col gap-5 mx-12 pt-14' id='courses'>
             <div className=''>
                 <h2 className='text-2xl mb-1'>Courses</h2>
-                <p className='text-base'>
+                <p className='text-[15px]'>
                     Here are some of the courses that I have taken in my spare time. You'll be able to see the certificates for these on my LinkedIn profile.
                 </p>
             </div>

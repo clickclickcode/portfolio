@@ -25,7 +25,7 @@ export default function ProjectCard({ post }) {
                         <h1 className='font-semibold'>{parse(post.title.rendered)}</h1>
                         <div className=''>{parse(post.acf.year)}</div>
                     </div>
-                    <div className=''>{parse(post.acf.description)}</div>
+                    <div className='text-[15px]'>{parse(post.acf.description)}</div>
                 </div>
                 <div className='flex justify-center'>
                     <button onClick={letsGo} className='rounded-md text-white bg-gray-800 text-center px-12 py-1 hover:bg-gray-400/30 hover:text-black'>Live Project</button>
