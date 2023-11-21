@@ -80,7 +80,7 @@ export default function Work() {
             {/* These are courses that I have done */}
             <div className='flex items-center gap-6 py-4 px-2 overflow-scroll md:flex-col'>
                 {courses.map(course => (
-                    <CourseCard key={course.id} course={...course} />
+                    <CourseCard key={course.id} course={course} />
                 ))}
             </div>
         </div>
