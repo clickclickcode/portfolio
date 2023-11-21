@@ -71,6 +71,12 @@ export default function Work() {
                     <ProjectCard key={post.id} post={post} />
                 ))}
             </div>
+            <div className=''>
+                <h2 className='text-2xl mb-1'>Courses</h2>
+                <p className='text-base'>
+                    Here are some of the courses that I have taken in my spare time. You'll be able to see the certificates for these on my LinkedIn profile.
+                </p>
+            </div>
             {/* These are courses that I have done */}
             <div className='flex items-center gap-6 py-4 px-2 overflow-scroll md:flex-col'>
                 {courses.map(course => (
