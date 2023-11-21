@@ -4,23 +4,28 @@
 
 /* width */
 ::-webkit-scrollbar {
-    scrollbar-width: thin;
+    /* For the vertical scrollbars */
+    width: 8px;
+    /* For the horizontal scrollbars */
+    height: 6px;
 }
  
 /* Track */
 ::-webkit-scrollbar-track {
-    background: #f1f1f1;
+    background: #fff;
 }
  
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: #888;
+    background: rgb(31,41,55);
     border-radius: 5px;
+    width: 6px;
+    height: 4px;
 }
  
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background: #555;
+    background: rgb(156,163,175);
 }
 
 @layer base {

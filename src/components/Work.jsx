@@ -20,7 +20,8 @@ export default function Work() {
 
     
     return (
-        <div className='flex flex-col gap-5 mx-12 pt-14' id='work'>
+        // pt-14
+        <div className='flex flex-col gap-5 mx-12 py-14' id='work'>
             <div className=''>
                 <h2 className='text-2xl mb-1'>Projects</h2>
                 <p className='text-[15px]'>
@@ -28,7 +29,7 @@ export default function Work() {
                 </p>
             </div>
             {/* These are the WP projects */}
-            <div className='flex items-center gap-6 py-4 px-2 overflow-x-scroll md:justify-center'>
+            <div className='flex items-center gap-6 py-4 px-2 overflow-auto md:justify-center'>
                 {posts.map(post => (
                     <ProjectCard key={post.id} post={post} />
                 ))}

@@ -13,16 +13,18 @@ import Courses from './components/Courses'
 export default function App() {
 
   return (
-    <div className='flex flex-col gap-8 w-screen mx-auto md:w-[55rem] md:gap-14 lg:w-70'>
+    <div className='flex flex-col w-screen mx-auto md:w-[55rem] md:gap-14 lg:w-70'>
       <HeaderV2 />
 
-      <Intro />
-      <Hr />
-      <AboutMe />
-      <Hr />
-      <Work />
-      <Hr />
-      <Courses />
+      <div className='flex flex-col gap-6 mb-6'>
+        <Intro />
+        <Hr />
+        <AboutMe />
+        <Hr />
+        <Work />
+        <Hr />
+        <Courses />
+      </div>
 
       <Footer />
     </div>
