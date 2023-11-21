@@ -1,11 +1,24 @@
 import { useEffect, useState } from 'react';
-import CardContainer from './CardContainer'
 import parse from 'html-react-parser'
 import ProjectCard from './ProjectCard';
 import CourseCard from './CourseCard';
+import { courses } from '../assets/storage.js';
 
 
 export default function Work() {
+  
+    const [posts, setPosts] = useState([]);
+    
+    useEffect(() => {
+        async function getPosts() {
+            const response = await fetch('https://wp.learningthings.dk/wp-json/wp/v2/project?_embed');
+            const data = await response.json();
+            // console.log(data);
+            setPosts(data);
+        }
+        getPosts();
+    }, []);
+
 
     const projects = [
         {
@@ -42,18 +55,6 @@ export default function Work() {
             alt: '',
         },
     ];
-
-    const [posts, setPosts] = useState([]);
-
-    useEffect(() => {
-        async function getPosts() {
-            const response = await fetch('https://wp.learningthings.dk/wp-json/wp/v2/project?_embed');
-            const data = await response.json();
-            // console.log(data);
-            setPosts(data);
-        }
-        getPosts();
-    }, []);
     
     return (
         <div className='flex flex-col gap-5 mx-10 pt-14' id='work'>
@@ -70,13 +71,12 @@ export default function Work() {
                     <ProjectCard key={post.id} post={post} />
                 ))}
             </div>
-            {/* This is the end of the WP projects */}
+            {/* These are courses that I have done */}
             <div className='flex items-center gap-6 py-4 px-2 overflow-scroll md:flex-col'>
-                {/* {createRoutesFromElements.map(course => {
-                    <CourseCard key={course.id} course={course} />
-                })} */}
+                {courses.map(course => (
+                    <CourseCard key={course.id} course={...course} />
+                ))}
             </div>
-            {/* <CardContainer /> */}
         </div>
     )
 }
