@@ -13,6 +13,7 @@ export default function Work() {
                 </p>
             </div>
             {/* These are courses that I have done */}
+            {/* Testing to see if overflow-auto will solve the issue of microsofts ugly scrollbars - original class was 'overflow-x-scroll' */}
             <div className='flex items-center gap-6 py-4 px-2 overflow-x-scroll'>
                 {courses.map(course => (
                     <CourseCard key={course.id} course={course} />
