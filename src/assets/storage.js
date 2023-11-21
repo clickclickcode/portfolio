@@ -4,7 +4,7 @@ const courses = [
     {
         id: 1,
         title: 'Web Development',
-        description: 'Words',
+        description: 'A course consisting of 14 modules covering HTML, CSS, JavaScript, React, Back-End Development with Express, SQL, and TDD with Mocha.',
         img: '../images/codecademy-logo-v2.png',
         platform: 'Codecademy',
         progress: '60%',
@@ -12,7 +12,7 @@ const courses = [
     {
         id: 2,
         title: 'Learn JavaScript',
-        description: '',
+        description: 'This course covered the basics of JavaScript, including variables, control flow, functions, loops, and objects.',
         img: '../../public/images/codecademy-logo-v2.png',
         platform: 'Codecademy',
         progress: 'Completed',
