@@ -20,7 +20,7 @@ const courses = [
     {
         id: 3,
         title: 'Learn Intermediate JavaScript',
-        description: '',
+        description: 'This course covers topics such as classes, modules, promises, async-await, requests, and error handling.',
         img: '../images/codecademy-logo-v2.png',
         platform: 'Codecademy',
         progress: 'Completed',
@@ -28,7 +28,7 @@ const courses = [
     {
         id: 4,
         title: 'Learn the Command Line',
-        description: '',
+        description: 'In this course I learned how to navigate the command line, create and modify files, set up aliases, and how to use the Nano text editor.',
         img: '../images/codecademy-logo-v2.png',
         platform: 'Codecademy',
         progress: 'Completed',
@@ -36,7 +36,7 @@ const courses = [
     {
         id: 5,
         title: 'Building Interactive JavaScript Websites',
-        description: '',
+        description: 'This covered the basics of HTML, CSS, and JavaScript, and how to bring them together to build interactive websites.',
         img: '../images/codecademy-logo-v2.png',
         platform: 'Codecademy',
         progress: 'Completed',
@@ -44,7 +44,7 @@ const courses = [
     {
         id: 6,
         title: 'Learn Intermediate CSS',
-        description: '',
+        description: 'In this course the topics covered included CSS Grid, Flexbox, responsive design, and CSS animations.',
         img: '../images/codecademy-logo-v2.png',
         platform: 'Codecademy',
         progress: 'Completed',
@@ -52,7 +52,7 @@ const courses = [
     {
         id: 7,
         title: 'JavaScript: Async',
-        description: '',
+        description: 'This course looked at asynchronous JavaScript, including callbacks, promises, and async-await.',
         img: '../../public/images/linkedin-learning-logo.png',
         platform: 'LinkedIn Learning',
         progress: 'Completed',
@@ -60,7 +60,7 @@ const courses = [
     {
         id: 8,
         title: 'JavaScript Essential Training',
-        description: '',
+        description: 'A 5+ hour course covering the basics of JavaScript.',
         img: '../../public/images/linkedin-learning-logo.png',
         platform: 'LinkedIn Learning',
         progress: 'Completed',
