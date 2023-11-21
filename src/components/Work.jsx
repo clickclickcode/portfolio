@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import CardContainer from './CardContainer'
 import parse from 'html-react-parser'
 import ProjectCard from './ProjectCard';
+import CourseCard from './CourseCard';
 
 
 export default function Work() {
@@ -70,6 +71,11 @@ export default function Work() {
                 ))}
             </div>
             {/* This is the end of the WP projects */}
+            <div className='flex items-center gap-6 py-4 px-2 overflow-scroll md:flex-col'>
+                {/* {createRoutesFromElements.map(course => {
+                    <CourseCard key={course.id} course={course} />
+                })} */}
+            </div>
             {/* <CardContainer /> */}
         </div>
     )
