@@ -13,7 +13,7 @@ import Courses from './components/Courses'
 export default function App() {
 
   return (
-    <div className='flex flex-col gap-8 w-screen mx-auto md:w-[55rem] md:gap-14'>
+    <div className='flex flex-col gap-8 w-screen mx-auto md:w-[55rem] md:gap-14 lg:w-70'>
       <HeaderV2 />
 
       <Intro />

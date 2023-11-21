@@ -28,7 +28,7 @@ export default function ProjectCard({ post }) {
                     <div className=''>{parse(post.acf.description)}</div>
                 </div>
                 <div className='flex justify-center'>
-                    <button onClick={letsGo} className='rounded-md text-white bg-gray-800 text-center px-12 py-1 hover:bg-teal-500 hover:text-black'>Live Project</button>
+                    <button onClick={letsGo} className='rounded-md text-white bg-gray-800 text-center px-12 py-1 hover:bg-gray-400/30 hover:text-black'>Live Project</button>
                 </div>
             </div>
         </div>
